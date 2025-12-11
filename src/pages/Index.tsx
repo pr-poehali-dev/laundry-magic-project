@@ -27,7 +27,7 @@ export default function Index() {
 
   return (
     <div className="min-h-screen">
-      <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+      <header className="fixed top-0 w-full bg-card/95 backdrop-blur-sm border-b border-border z-50">
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Icon name="Sparkles" className="text-primary" size={28} />
@@ -46,7 +46,7 @@ export default function Index() {
         </nav>
       </header>
 
-      <section id="home" className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary/5 via-secondary/10 to-accent/5">
+      <section id="home" className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
@@ -145,7 +145,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="prices" className="py-20 px-4 bg-secondary/20">
+      <section id="prices" className="py-20 px-4 bg-secondary/30">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Цены</h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">
@@ -303,7 +303,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="contacts" className="py-20 px-4 bg-gradient-to-br from-primary/5 via-secondary/10 to-accent/5">
+      <section id="contacts" className="py-20 px-4 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Свяжитесь с нами</h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">
@@ -389,7 +389,7 @@ export default function Index() {
         </div>
       </section>
 
-      <footer className="bg-foreground text-background py-12 px-4">
+      <footer className="bg-card border-t border-border text-foreground py-12 px-4">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
@@ -397,29 +397,29 @@ export default function Index() {
                 <Icon name="Sparkles" className="text-primary" size={28} />
                 <span className="text-2xl font-bold">FreshLaundry</span>
               </div>
-              <p className="text-background/70">
+              <p className="text-muted-foreground">
                 Профессиональная прачечная с доставкой на дом
               </p>
             </div>
             <div>
               <h3 className="font-bold mb-4">Навигация</h3>
-              <ul className="space-y-2 text-background/70">
-                <li><button onClick={() => scrollToSection('services')} className="hover:text-background transition-colors">Услуги</button></li>
-                <li><button onClick={() => scrollToSection('prices')} className="hover:text-background transition-colors">Цены</button></li>
-                <li><button onClick={() => scrollToSection('about')} className="hover:text-background transition-colors">О нас</button></li>
-                <li><button onClick={() => scrollToSection('contacts')} className="hover:text-background transition-colors">Контакты</button></li>
+              <ul className="space-y-2 text-muted-foreground">
+                <li><button onClick={() => scrollToSection('services')} className="hover:text-primary transition-colors">Услуги</button></li>
+                <li><button onClick={() => scrollToSection('prices')} className="hover:text-primary transition-colors">Цены</button></li>
+                <li><button onClick={() => scrollToSection('about')} className="hover:text-primary transition-colors">О нас</button></li>
+                <li><button onClick={() => scrollToSection('contacts')} className="hover:text-primary transition-colors">Контакты</button></li>
               </ul>
             </div>
             <div>
               <h3 className="font-bold mb-4">Контакты</h3>
-              <ul className="space-y-2 text-background/70">
+              <ul className="space-y-2 text-muted-foreground">
                 <li>+7 (999) 123-45-67</li>
                 <li>info@freshlaundry.ru</li>
                 <li>г. Москва, ул. Примерная, д. 1</li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-background/20 pt-8 text-center text-background/70">
+          <div className="border-t border-border pt-8 text-center text-muted-foreground">
             <p>&copy; 2024 FreshLaundry. Все права защищены.</p>
           </div>
         </div>
